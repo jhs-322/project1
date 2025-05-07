@@ -1,13 +1,27 @@
-# project1
-사이트의 크립토재킹 코드를 clova api로 탐지
+# Project1
 
-```git clone https://github.com/jhs-322/project1.git```<br/>
-```cd project1```<br/>
-```pip install -r requirements.txt```<br/>
-```python Main.py```<br/>
-1. [INPUT] 검사하고 싶은 사이트의 url<br/>
-   [OUTPUT] JS 추출 텍스트 파일<br/>
-2. [INPUT] 추출된 JS코드 텍스트 파일을 입력<br/>
-   [OUTPUT] 크립토재킹 코드를 검사<br/>
-3. [INPUT] 검사 내용이 담긴 텍스트 파일을 입력<br/>
-   [OUTPUT] 최종 위험도 판단<br/>
+> 사이트의 **크립토재킹(Cryptojacking)** 코드를 Naver Clova API로 탐지하는 도구입니다.
+
+---
+
+## 설치 방법
+
+```bash
+git clone https://github.com/jhs-322/project1.git
+cd project1
+pip install -r requirements.txt
+python Main.py
+```
+
+## 사용 방법
+🔎 1단계: URL 입력
+- 검사할 웹사이트의 URL을 입력하면,
+- 해당 URL에서 JavaScript 파일을 자동 추출하여 .txt 파일로 저장합니다.
+
+🧠 2단계: JS 코드 분석
+- 저장된 JS 텍스트 파일을 지정하면,
+- Clova API를 이용해 의심 키워드를 분석하고 결과를 새로운 .txt 파일로 저장합니다.
+
+🚨 3단계: 위험도 평가
+- 분석 결과 파일을 지정하면,
+- 키워드 빈도와 유형을 바탕으로 위험도를 **0~100%**로 출력합니다.
