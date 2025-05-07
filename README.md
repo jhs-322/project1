@@ -1,7 +1,13 @@
 # project1
 사이트의 크립토재킹 코드를 clova api로 탐지
 
-1. dist 파일의 exe 파일 실행
-2. 검사하고 싶은 사이트의 url 입력
-3. 추출된 JS코드 텍스트 파일을 입력받아 크립토재킹 코드를 검사
-4. 검사 내용이 담긴 텍스트 파일을 입력받아 최종 위험도 판단
+```git clone https://github.com/jhs-322/project1.git```
+```cd project1```
+```pip install -r requirements.txt```
+```python Main.py```
+1. [INPUT] 검사하고 싶은 사이트의 url
+   [OUTPUT] JS 추출 텍스트 파일
+2. [INPUT] 추출된 JS코드 텍스트 파일을 입력
+   [OUTPUT] 크립토재킹 코드를 검사
+3. [INPUT] 검사 내용이 담긴 텍스트 파일을 입력
+   [OUTPUT] 최종 위험도 판단
