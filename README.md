@@ -2,7 +2,6 @@
 
 > 사이트의 **크립토재킹(Cryptojacking)** 코드를 Naver Clova API로 탐지하는 도구입니다.
 
----
 
 ## 설치 방법
 
